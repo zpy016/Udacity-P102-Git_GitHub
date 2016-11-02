@@ -1,0 +1,57 @@
+查看文件的两个版本之间的差异如何帮助你了解引入的错误？
+
+Using "diff -u file_1.xx file_2.xx" can help me find what is file_2 more than file_1
+By checking only the differences of the 2 file, I can quickly locate the typo or other mistakes that I make.
+
+
+从长远来看，能轻松访问文件的整个历史记录将如何提高编程者的效率？
+
+Being able to find the entire hisory will increase developers efficency in a long run in many ways. First, if current version has errors, it can be easily find out by conparing it with a previous version. Second, if a feature or a method is eliminated in an old version and now useful, it can be picked up immediately. Lastly, when multiple people are woring on the same project, version control is essential because any unwanted edition by a single person can be reversed easily.
+
+
+何你认为一些版本控制系统（例如 Git）允许在一次提交中保存多个文件，而其他系统（例如 Google Docs）单独对待每个文件？
+
+It is useful when we make one change that affect multiple files.
+
+如何使用命令 git log 和 git diff 来查看文件的历史记录？
+
+git log --stat is useful to see all versions of a repository and statistics like how many line were added and deleted.
+
+git diff commit_1_# commit_2_# shows the difference of two commits, i.e. commit 1 - then + some lines and then becomes commit 2.
+
+
+使用版本控制，如何让你更有信心进行有可能会造成破坏的更改？
+
+Whenever I make a change that could be a potential bug, I can use "git checkout commit_#" to check in which commit the bug was introduced and get back to a version that doesn't include bug.
+
+Thus, I don't need to worry about if there is a fatal bug.
+
+
+现在你已设置了工作空间，你想尝试使用 Git 来做些什么？
+
+Do all kinds of crazuy things.
+
+
+
+Git command review
+Compare two commits, printing each line that is present in one commit but not the other.
+
+git diff will do this. It takes two arguments - the two commit ids to compare. 
+
+
+Make a copy of an entire Git repository, including the history, onto your own computer.
+
+git clone will do this. It takes one argument - the url of the repository to copy. 
+
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+
+git checkout will do this. It takes one argument - the commit ID to restore. 
+
+
+Show the commits made in this repository, starting with the most recent.
+
+git log will do this. It doesn't take any arguments.
+
+
+
