@@ -1,12 +1,32 @@
 暂存区与工作目录和版本库有何不同？你认为它具有什么价值？
 
-staging area
-It is a place to store files for making the first commit.
+Working Directory
+Working Area, using “git add” to add files to staging area
+
+Staging area
+It is a place to store files for making a commit so that they become a new commit in a repository.
 
 Repository
 It contains all the versions of all file that is in the repository.
 
-Staging area is used to prepare files to be commited. After files are commited, they will become a new commit in repository.
+Staging area is used to prepare files to be committed. After files are commited, they will become a new commit in repository.
+
+
+“git diff” will compare working directory and staging area
+“git diff —-staged” will compare staging area and the most recent commit in the repository
+“git diff commit_#1 commit_#2” will compare two commits in the repository
+
+“git reset —-hard” will left all modifications in the working directory and staging area. !!!Be careful, in repository you can always go to a previous version/commit without loosing anything in the current one. But reverse the working directory or the staging area will never be able to redo.
+
+如何使用暂存区确保为每项逻辑更改进行一次提交？
+
+I will “git add” any logical change to staging area and use “git commit” to commit to the depository.
+
+
+
+
+
+
 
 
 
