@@ -1,0 +1,14 @@
+暂存区与工作目录和版本库有何不同？你认为它具有什么价值？
+
+staging area
+It is a place to store files for making the first commit.
+
+Repository
+It contains all the versions of all file that is in the repository.
+
+Staging area is used to prepare files to be commited. After files are commited, they will become a new commit in repository.
+
+
+
+
+
