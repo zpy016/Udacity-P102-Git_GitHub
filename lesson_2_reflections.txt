@@ -9,12 +9,14 @@ It is a place to store files for making a commit so that they become a new commi
 Repository
 It contains all the versions of all file that is in the repository.
 
-Staging area is used to prepare files to be committed. After files are commited, they will become a new commit in repository.
+Staging area is used to prepare files to be committed. After files are committed, they will become a new commit in repository.
 
 
 “git diff” will compare working directory and staging area
 “git diff —-staged” will compare staging area and the most recent commit in the repository
 “git diff commit_#1 commit_#2” will compare two commits in the repository
+
+“git show commit_#1” will compare commit_#1 with its parent (useful after merging branch to master, where branch and master commits are mixed together) 将提交与所在分支进行对比
 
 “git reset —-hard” will left all modifications in the working directory and staging area. !!!Be careful, in repository you can always go to a previous version/commit without loosing anything in the current one. But reverse the working directory or the staging area will never be able to redo.
 
@@ -23,9 +25,27 @@ Staging area is used to prepare files to be committed. After files are commited,
 I will “git add” any logical change to staging area and use “git commit” to commit to the depository.
 
 
+在哪些情况下，分支可以帮助你有序地组织历史记录？分支将如何提供帮助？
+
+When I try to add another feature but I’m not sure that this is good. The branch give me a  risk-free environment to try new ideas.
+
+Master branch is a quality branch and it always works. A new branch is used to try something new, add a unique feature or experimental task.
+
+A new branch for every feature and bug-fix.
+
+git checkout -b new_branch_name = git branch new_branch_name; git checkout new_branch_name
 
 
+图表如何帮助你直观显示分支结构？
 
+use this command: “git log —-graph —-oneline branch1 branch2”
+
+
+“git branch -d branch_nam” -d delete a branch name after merge, previous branch commits become master commits.
+
+将两个分支合并到一起有何结果？为什么我们在图表中表示它的方式是那样的？
+
+When two branches are merged, one branch will keep its name and the other branch’s name can be deleted. Two branches’ commits will mixed together and sort by time.
 
 
 
