@@ -48,6 +48,10 @@ use this command: “git log —-graph —-oneline branch1 branch2”
 When two branches are merged, one branch will keep its name and the other branch’s name can be deleted. Two branches’ commits will mixed together and sort by time.
 
 
+Git 的自动合并与始终手动进行合并各有何优缺点？
+
+Git automatic merge is faster and simpler than manually merge. However, one must know how automatic merge works before using it. Manually merge is easy when there is little code and you know them really well.
+
 
 
 
