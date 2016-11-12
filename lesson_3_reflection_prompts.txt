@@ -29,5 +29,7 @@ It is easier to use Git and GitHub.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
+何时你会想在独立的分支中而不是直接在 master 中进行更改？两种方法各有何好处？
+When I want to try mulitple things together or multiple people are working on the same master, branches allow the updated versions to coexist.
 
-    Fill in your answer here
+
