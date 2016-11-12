@@ -1,3 +1,4 @@
+
 When would you want to use a remote repository rather than keeping all your work
 local?
 
@@ -23,9 +24,8 @@ stored locally?
 It can be used when there is not internet access.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
-and what would be harder?
-
-    Fill in your answer here
+and what would be harder?如何在不使用 Git 或 GitHub 的情况下开展协同？哪种做法更容易？哪种做法更困难？
+It is easier to use Git and GitHub.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
