@@ -19,8 +19,8 @@ use one instead of another?
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
-
-    Fill in your answer here
+拥有远程分支的上次已知状态的副本（存储在本地）有何好处？
+It can be used when there is not internet access.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
